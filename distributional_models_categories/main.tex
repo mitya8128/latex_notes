@@ -19,12 +19,13 @@
 \maketitle
 
 \begin{abstract}
-Cartesian closure of so called semantic copresheaves and their enriched [0,1]-version
+Random (co)products and Cartesian closure of so called semantic copresheaves and their enriched [0,1]-version.
+Use this constructions to deal with scope ambiguities.
 \end{abstract}
 
 \section{Introduction}
 
-Notes about categorification of LLM's, especially distributional, and 
+Notes about categorification of LLM's, especially distributional.
 
 \section{Intro}
 
@@ -36,19 +37,30 @@ AND "operator"
 \newline
 $h^{red} \times h^{rand}$
 \newline
-$h^{red} \times h^{rand($\leq \delta$)}$
+$h^{red} \times h^{rand(\leq \delta)}$
+\newline
+where
+\newline
+rand - random word (more strictly - random string, see Lemma 5.1)
+\newline
+and $\delta$ is distance between "red" and "rand" words
+\newline
+h - is categorical copresheaf of specific word (Yoneda embedding): all strings with specific substring
+(need to clarify the degree of inclusion:
+whether there exist as object of category L nonsemantic subtoken
+of token (example: r $\xrightarrow{}$ red) ?)
 \newline
 \newline
-$"semantic circle of radius $\delta$"$
+"semantic circle of radius $\delta"$
 \newline
-as example: 
+as example:
 \newline
-Red and blue -> list of objects with that property: "flag", "coin" ...
+Red and blue $\xrightarrow{}{}$ list of objects with that property: "flag", "coin" ...
 \newline
 \newline
-$"semantic circle of radius zero"$
+"semantic circle of radius zero"
 \newline
-\delta=0
+$\delta=0$
 \newline
 $h^{red} \times h^{red}$
 \newline
@@ -60,9 +72,9 @@ OR "operator"
 Implication "operator"
 
 \section{Scope ambiguities}
-- Every man loves a woman  
+- Every man loves a woman
 \newline
-- Work with scope ambiguities in wider context (lemma): 
+- Work with scope ambiguities in wider context (lemma):
 \newline
 \begin{lemma}
 There is exist string of every length (as objects in L category)
